@@ -1,0 +1,25 @@
+.container {
+  width: 80%;
+  height: 10rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 16px;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/img/back.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+/* Responsive (<768px) */
+@media (max-width: 768px) {
+  .container {
+    height: 6rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+
+  }
+}
