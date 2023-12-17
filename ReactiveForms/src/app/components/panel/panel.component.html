@@ -1,0 +1,19 @@
+<form [formGroup]="formPanel"  autocomplete="off" (click)="calculate()">
+
+  <div class="container-panel">
+    <div class="panel-pages d-flex gap-3">
+      <label class="form-panel-label" for="pages"><b>Número de páginas</b> </label>
+      <button type="button" (click)="minusPages()">-</button>
+      <input class="form-panel-input" type="number" id="pages" formControlName="numberPages">
+      <button type="button" (click)="plusPages()">+</button>
+    </div>
+
+    <div class="panel-languages d-flex gap-3">
+      <label class="form-panel-label" for="languages"><b>Cantidad de lenguages</b></label>
+      <button type="button" (click)="minusLanguages()">-</button>
+      <input class="form-panel-input" type="number" id="languages" formControlName="numberLanguages">
+      <button type="button" (click)="plusLanguages()">+</button>
+    </div>
+  </div>
+
+</form>

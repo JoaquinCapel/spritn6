@@ -18,7 +18,7 @@ form {
   justify-content: space-around;
   padding: 2rem;
   align-items: center;
-  width: 70%;
+  width: 80%;
   border-radius: 10px;
 
   .modal-cards-description {
@@ -28,9 +28,8 @@ form {
 
 .container-totalPrice {
   display: flex;
-  justify-content: end;
-  width: 70%;
-  align-self: center;
+  justify-content: center;
+  width: 100%;
 
   .total-price {
     width: 80%;
@@ -44,9 +43,28 @@ form {
   }
 
   .total-price-result {
-    width: 20%;
+    width: 15%;
     display: flex;
     justify-content: end;
+  }
+}
+
+.modal-card-panel {
+  padding: 2rem;
+  align-items: center;
+  width: 80%;
+  border-radius: 10px;
+
+  .modal-cards-description {
+    color: rgb(95, 95, 95);
+  }
+
+  .modal-cards-text,
+  .modal-cards-price,
+  .modal-cards-checkbox {
+    display: flex;
+    justify-content: center;
+    width: 80%;
   }
 }
 
@@ -57,21 +75,19 @@ form {
   .modal-cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 2rem;
     align-items: center;
-    width: 80%;
-    border-radius: 10px;
   }
 
   .modal-cards-text,
-  .modal-cards-price{
+  .modal-cards-price {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 70%;
   }
-  .modal-cards-checkbox{
+
+  .modal-cards-checkbox {
     margin-top: 1rem;
   }
 
@@ -80,7 +96,7 @@ form {
     justify-content: center;
     width: 100%;
 
-    .total-price{
+    .total-price {
       width: 80%;
     }
 
@@ -96,6 +112,29 @@ form {
       justify-content: end;
     }
   }
+
+  .modal-card-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    .modal-card-panel-show {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 70%;
+    }
+
+    .modal-cards-checkbox {
+      margin-top: 1rem;
+    }
+
+    .panel-box {
+      align-self: end;
+      margin-top: 2rem;
+    }
+
+  }
+
 }
-
-
