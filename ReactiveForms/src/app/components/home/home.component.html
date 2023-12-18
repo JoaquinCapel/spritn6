@@ -1,6 +1,6 @@
 <app-welcome />
 
-<form [formGroup]="formCheckbox" >
+<form [formGroup]="formCheckbox">
 
   <!-- CARD SEO -->
   <div class="modal-cards shadow mt-4">
@@ -50,9 +50,9 @@
 
     @if(formCheckbox.get('accept3')?.value){
     <div class="panel-box">
-      <app-panel (pagesPrice)="updateTotalPrice($event)"/>
+      <app-panel (pagesPrice)="updateTotalPrice($event)" />
     </div>
-  }
+    }
 
   </div>
 
@@ -61,6 +61,32 @@
         class="total-price-result">{{totalPrice}}€</b></p>
   </div>
 
+
+
+  <!-- Generador de presupuestos -->
+  <div class="container d-flex flex-column shadow p-3">
+    <div>
+      <h6 class="fw-bold">Solicitar presupuesto</h6>
+    </div>
+
+    <div class="container d-flex gap-3">
+      <div class="mb-3">
+        <input type="name" class="form-control" id="nameForm" placeholder="Nombre">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your name with anyone else.</div> -->
+      </div>
+
+      <div class="mb-3">
+        <input type="number" class="form-control" id="phoneForm" placeholder="Teléfono">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your number with anyone else.</div> -->
+      </div>
+
+      <div class="mb-3">
+        <input type="email" class="form-control" id="emailForm" placeholder="Email">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+      </div>
+
+      <button type="submit" class="btn btn-primary">Solicitar presupuesto</button>
+    </div>
+  </div>
+
 </form>
-
-

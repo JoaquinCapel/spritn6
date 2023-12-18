@@ -74,5 +74,4 @@ export class PanelComponent implements OnInit {
 
     return calculated
   }
-
 }
