@@ -1,7 +1,13 @@
-<p>
-	You can pass an existing component as content of the modal window. In this case, if you're still using Angular 8 or
-	older, remember to add the content component in the <code>entryComponents</code> section of your
-	<code>NgModule</code>. For Angular 9 or newer, it's not needed anymore.
-</p>
+<ng-template #content let-modal>
+	<div class="modal-header text-center">
+		<h4 class="modal-title fw-bold">Número de páginas y lenguages</h4>
+	</div>
+	<div class="modal-body text-center">
+		<p>Añade las páginas y lenguages que tendrá tu proyecto.</p>
+    <p>El coste de cada opción será 30€.</p>
+	</div>
+</ng-template>
 
-<button class="btn btn-lg btn-outline-primary" (click)="open()">Launch demo modal</button>
+<button class="btn btn-outline-primary mb-2 me-2 rounded-circle" (click)="openVerticallyCentered(content)">
+i</button>
+

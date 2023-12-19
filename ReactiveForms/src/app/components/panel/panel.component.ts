@@ -2,11 +2,12 @@ import { Component, OnInit, Output } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { BudgetService } from '../../services/budget.service';
 import { EventEmitter } from '@angular/core';
+import { NgbdModalOptions } from '../shared/modal/modal.component';
 
 @Component({
   selector: 'app-panel',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, NgbdModalOptions],
   templateUrl: './panel.component.html',
   styleUrl: './panel.component.scss'
 })
@@ -74,4 +75,5 @@ export class PanelComponent implements OnInit {
 
     return calculated
   }
+
 }

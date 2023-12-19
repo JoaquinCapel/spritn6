@@ -1,20 +1,21 @@
-<form [formGroup]="formPanel"  autocomplete="off" (click)="calculate()">
-
-  <div class="container-panel">
-    <div class="panel-pages d-flex gap-3">
-      <i class="fa-solid fa-circle-info fa-sm pe-1" style="color: blue;">i</i>
-      <label class="form-panel-label" for="pages"><b>Número de páginas</b> </label>
-      <button type="button" (click)="minusPages()">-</button>
-      <input class="form-panel-input" type="number" id="pages" formControlName="numberPages">
-      <button type="button" (click)="plusPages()">+</button>
+<form [formGroup]="formPanel" autocomplete="off" (click)="calculate()">
+  <div class="row">
+    <div class="container-panel">
+      <div class="panel-pages d-flex gap-3 justify-content-end mt-3 align-items-center">
+        <div> <app-modal /></div>
+        <label class="form-panel-label" for="pages"><b>Número de páginas</b> </label>
+        <button type="button" class="btn rounded-circle border border-2 m-0 p-0" (click)="minusPages()">-</button>
+        <input class="form-panel-input" type="number" id="pages" formControlName="numberPages" (keydown.enter)="$event.preventDefault()">
+        <button type="button" class="btn rounded-circle border border-2 m-0 p-0" (click)="plusPages()">+</button>
+      </div>
     </div>
 
-    <div class="panel-languages d-flex gap-3">
-      <i class="fa-solid fa-circle-info fa-sm pe-1" style="color: blue;">i</i>
+    <div class="panel-languages d-flex gap-3 justify-content-end align-items-center">
+      <div> <app-modal /></div>
       <label class="form-panel-label" for="languages"><b>Cantidad de lenguages</b></label>
-      <button type="button" (click)="minusLanguages()">-</button>
-      <input class="form-panel-input" type="number" id="languages" formControlName="numberLanguages">
-      <button type="button" (click)="plusLanguages()">+</button>
+      <button type="button" class="btn rounded-circle border border-2 m-0 p-0" (click)="minusLanguages()">-</button>
+      <input class="form-panel-input" type="number" id="languages" formControlName="numberLanguages" (keydown.enter)="$event.preventDefault()" >
+      <button type="button" class="btn rounded-circle border border-2 m-0 p-0" (click)="plusLanguages()">+</button>
     </div>
   </div>
 

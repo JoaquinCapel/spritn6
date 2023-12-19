@@ -1,39 +1,11 @@
-.container-panel {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  gap: 1.2rem;
+.rounded-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: .8rem;
+  border-radius: 50%;
+}
 
-  .panel-pages,
-  .panel-languages {
-    width: 50%;
-    font-size: .8rem;
-    display: flex;
-    justify-content: center;
-
-    input {
-      width: 2rem;
-      border-radius: 8px;
-      border: 1px solid grey;
-    }
-  }
-
-  .form-panel-label {
-    width: 40%;
-    display: flex;
-    justify-content: end;
-  }
-
- button{
-  background-color: white;
-  border: 1px solid grey;
-  border-radius: 100%;
-  font-size: 7pt;
-  font-weight: bolder;
-  text-align: center;
-  color: gray;
- }
-
+.form-panel-input {
+  width: 50px;
+  height: 30px;
 }
